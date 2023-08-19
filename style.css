@@ -24,6 +24,7 @@
 .navbar-nav {
     margin-left:50px ;
     margin-top: 6px;
+    color: white;
 }
 .nav-item .nav-link{
     margin-left: 10px;
@@ -45,6 +46,11 @@
     border-radius: 5px;
     cursor: pointer;
     padding: 3px;
+    transition: 0.5s ease;
+}
+.btncv:hover{
+    background-color:black ;
+    color: #ff9900;
 }
 
 @media screen and (max-width:991px){
@@ -60,10 +66,10 @@
     height: 91.10vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 0;
+    /* justify-content: center;
+    flex-wrap: wrap; */
+    /* position: relative;
+    z-index: 0; */
 }
 /* .home .img{
    flex:1 1 400px ;
@@ -81,6 +87,7 @@
     margin-right: 30px;
     border-radius: 5px;
 }
+
 .home .content{
     flex:1 1 400px ;
     margin-left: 45px;
@@ -94,10 +101,78 @@
 
 .home .content h3{
     font-size: 50px;
-    
+    color: white;
 
 }
 .home .content h3 span{
     color: #ff9900;
     font-weight: bold;
+}
+.home .content h2{
+    font-weight: bold;
+    color: #ff9900;
+    font-size: 40px;
+}
+
+
+.home .content p{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.btnid{
+    color: #ff9900;
+    background: transparent;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: 2px solid #ff9900;
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 3rem;
+    position: relative;
+    top: 3rem;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+}
+.btnid:hover{
+    background-color: #ff9900;
+    color: black;
+}
+@media screen and (max-width:844px) {
+    .home-section{
+        height: 146vh;
+        background: black;
+    }
+    .home .content{
+        margin-top: 50px;
+    }
+    #navbar{
+        background-color: black;
+        
+    }
+    
+}
+@media screen and (max-width:650px) {
+    .home-section{
+        height: 130vh;
+       
+    }
+    
+}
+
+@media screen and (max-width:360px) {
+    .home-section{
+        height: 110vh;
+       
+    }
+    
+}
+.about{
+    width: 100%;
+    height: 80vh;
+    border: 2px solid black;
+    background: black;
+    color: white;
 }
